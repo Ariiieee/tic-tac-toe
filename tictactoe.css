@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 400px;
+  padding: 36px;
+  margin-right: 200px;
+}
+
+.right {
+  margin-top: 200px;
+}
+
+.game-title {
+  color: #1c7ed6;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 36px;
+}
+
+.restart-btn {
+  color: #1864ab;
+  padding: 20px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid #1c7ed6;
+  background-color: #e7f5ff;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.restart-btn:hover {
+  color: #e7f5ff;
+  background: #1864ab;
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8px;
+
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.player-x {
+  color: #22b8cf;
+  border-bottom: 3px solid #22b8cf;
+}
+.player-o {
+  color: #da77f2;
+  border-bottom: 3px solid #da77f2;
+}
+
+.game-board {
+  color: #868e96;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0;
+}
+
+.board-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+
+.board-tile:nth-child(1),
+.board-tile:nth-child(2),
+.board-tile:nth-child(4),
+.board-tile:nth-child(5) {
+  border-bottom: 3px solid #e7f5ff;
+  border-right: 3px solid #e7f5ff;
+}
+
+.board-tile:nth-child(3),
+.board-tile:nth-child(6) {
+  border-bottom: 3px solid #e7f5ff;
+}
+
+.board-tile:nth-child(7),
+.board-tile:nth-child(8) {
+  border-right: 3px solid #e7f5ff;
+}
